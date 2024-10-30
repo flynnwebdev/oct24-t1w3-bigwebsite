@@ -1,0 +1,12 @@
+:root {
+    --yale-blue: #134074ff;
+    --berkeley-blue: #13315cff;
+    --oxford-blue: #0b2545ff;
+    --powder-blue: #8da9c4ff;
+    --mint-cream: #eef4edff;
+}
+
+h1 {
+    color: var(--yale-blue);
+}
+
