@@ -6,7 +6,76 @@
     --mint-cream: #eef4edff;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mint-cream);
+}
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--powder-blue);
+}
+
+header {
+    min-height: 15vh;
+}
+
+header > p {
+    color: var(--oxford-blue);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--yale-blue);
+    border: 1px solid var(--oxford-blue);
+    font-size: smaller;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    color: var(--powder-blue);
+    background-color: var(--yale-blue);
+}
+
+main {
+    min-height: 83vh;
+    padding: 1rem;
+}
+
+/* Select the first image that is a first-level child of main */
+main > img:nth-of-type(1) {
+    width: 100%;
+    height: 50vw;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
 h1 {
     color: var(--yale-blue);
 }
 
+h1, p {
+    margin: 0.5rem 0;
+}
+
+p {
+    color: var(--berkeley-blue);
+}
+
+footer {
+    min-height: 5vh;
+}
